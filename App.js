@@ -1,14 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import { Button, StyleSheet, Text, View } from "react-native";
+import { loginWeb3 } from "./service/auth";
 
 export default function App() {
   const isLoggedIn = false;
+  const state = loginWeb3();
 
   function userLoggedView() {
     return (
       <>
         <Button title="Logout" />
-
         <StatusBar style="auto" />
       </>
     );
