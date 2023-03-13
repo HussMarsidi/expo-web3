@@ -4,7 +4,7 @@ import { loginWeb3 } from "./service/auth";
 
 export default function App() {
   const isLoggedIn = false;
-  const state = loginWeb3();
+  // const state = loginWeb3();
 
   function userLoggedView() {
     return (
@@ -26,7 +26,14 @@ export default function App() {
     );
   }
 
-  return <View style={styles.container}>{isLoggedIn ? userLoggedView() : userNotLoggedView()}</View>;
+  // return <View style={styles.container}>{isLoggedIn ? userLoggedView() : userNotLoggedView()}</View>;
+
+  return (
+    <View style={styles.container}>
+      <Text>hi</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
