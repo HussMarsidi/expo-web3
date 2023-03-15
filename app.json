@@ -12,9 +12,7 @@
       "backgroundColor": "#ffffff"
     },
     "scheme": "https://expo.dev",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
